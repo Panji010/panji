@@ -1,0 +1,157 @@
+/* ================================
+   GLOBAL RESET
+================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: #f7f7fb;
+    color: #333;
+}
+
+/* ================================
+   NAVBAR
+================================ */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 80px;
+    background: #ffffff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #6C63FF;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: 0.3s;
+    position: relative;
+}
+
+/* Hover underline */
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background: #6C63FF;
+    bottom: -2px;
+    left: 50%;
+    transition: 0.3s ease;
+    border-radius: 4px;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+nav ul li a.active {
+    color: #6C63FF;
+    font-weight: 600;
+}
+
+nav ul li a.active::after {
+    width: 100%;
+    left: 0;
+}
+
+/* ================================
+   PROJECT SECTION
+================================ */
+.projects {
+    max-width: 1200px;
+    margin: 60px auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.projects h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    color: #2d2d2d;
+}
+
+.projects p {
+    color: #666;
+}
+
+/* ================================
+   PROJECT CARD
+================================ */
+.project-card {
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 18px;
+    width: 60%;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(108, 99, 255, 0.20);
+}
+
+.project-card img {
+    width: 100%;
+    max-width: 450px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.project-card h3 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #2d2d2d;
+}
+
+.project-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Button */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #6C63FF;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #584df2;
+}
